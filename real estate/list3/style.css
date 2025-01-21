@@ -1,0 +1,468 @@
+.container-fluid{
+    background-color: #333;
+    margin-top: -0.5%;
+}
+
+.navbar-brand{
+    height: 65px;
+    width: 30px;
+}
+.alag{
+    width: 100px;
+    height: 50px;
+    margin-top: -5%;
+    filter: brightness(0) invert(1);
+    margin-bottom: -2%;
+}
+.alage{
+    width: 170px;
+    height: 30px;
+    margin-top: -5%;
+    margin-left: 0%;
+    filter: brightness(0) invert(1);
+}
+.navbar-nav{
+    margin-left: 40%;
+    grid-gap: 40%;
+}
+.navbar-toggler-icon{
+    height: 30px;
+}
+.navbar-toggler{
+    border: 1px;
+}
+.nav-link{
+    color: white;
+    width: 80px;
+    text-align: center;
+}
+.nav-link:hover{
+    color: whitesmoke;
+}
+
+.nav-item:hover{
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px){
+    .alag{
+        margin-left: -20%;
+        height: 40px;
+        width: 70px;
+        margin-top: 10%;
+    }
+    .alage{
+        height: 25px;
+        width: 130px;
+    }
+    .navbar-toggler{
+        width: 50px;
+        color: #f8f9fa;
+    }
+    .container-fluid{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -2%;
+    }
+    .nav-link{
+        background-color: none;
+    }
+
+}
+
+
+#ahm{
+    height: 470px;
+    width: 100%;
+    margin-top: 0%;
+    display: flex;
+}
+
+@media (max-width: 600px){
+    #ahm{
+        height: 230px;
+    }
+
+}
+
+/* details icons or price waali side  */
+.consi{
+    margin-top: 20px;
+    margin-left: 360px;  
+}
+
+#cons{
+    font-size: 25px;
+    margin-left: 60px;
+}
+#cns{
+    font-size: 20px;
+    margin-left: 60px;
+}
+
+.consi2{
+    margin-left: 375px;  
+}
+.cns2{
+    font-size: 18px;
+    margin-left: 60px;
+}
+.cns23{
+    font-size: 18px;
+    margin-left: 75px;
+}
+.cns24{
+    font-size: 18px;
+    margin-left: 75px;
+}
+.cns25{
+    font-size: 18px;
+    margin-left: 75px;
+}
+.cns26{
+    font-size: 18px;
+    margin-left: 75px;
+}
+.price{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 18px;
+}
+.loc{
+    margin-left: 80px;
+}
+/* details icons or price waali side end here  */
+@media (max-width: 600px){
+    .consi{
+        margin-top: 20px;
+        margin-left: 18px;  
+    }
+    
+    #cons{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    #cns{
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    
+    .consi2{
+        margin-left: -18px;  
+    }
+    .cns2{
+        font-size: 14px;
+        /* margin-left: 40px; */
+    }
+    .cns23{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .cns24{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .cns25{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .cns26{
+        font-size: 14px;
+        margin-left: 25px;
+    }
+    .price{
+        font-size: 15px;
+    }
+    .loc{
+        margin-left: 10px;
+    }
+}
+
+/* agent wala form jo right side par hai  */
+
+
+
+.detailcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.detailtext-section {
+    /* flex: 1; */
+    text-align: justify;
+    width: 900px;
+    margin-right: 20px;
+}
+
+.form-section {
+    width: 280px;
+    /* flex: 1; */
+    /* padding: 20px; */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.henr{
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.profimage{
+    width: 50px;
+    height: 60px;
+}
+
+.henr h4{
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.form-section p{
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+
+input[type="text"], input[type="email"] {
+    margin-top: 15px;
+    margin-left: 25px;
+    width: 220px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"] {
+    margin-left: 25px;
+    width: 120px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #3e8e41;
+}
+
+#response {
+    color: #008000; /* green color */
+    margin-top: 20px;
+}
+
+.error {
+    color: #ff0000; /* red color for error messages */
+    margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .detailcontainer {
+        flex-direction: column;
+    }
+    .detailtext-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px){
+    .detailtext-section{
+        width: 300px;
+        font-size: 12px;
+        text-align: justify;
+    }
+}
+
+/* agent wala form jo right side par hai end here  */
+
+
+
+  /* last starts here */
+
+  #last{
+    background-color: #333;
+    color: #f8f9fa;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    margin-left: -1%;
+    margin-top: 3%;
+}
+.flax{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 3.8%;
+}
+.aitams{
+    margin-left: 9%;
+}
+.aitams h2{
+  font-size: 24px;
+}
+.ion{
+    font-size: 25px;
+}
+.ion:hover{
+  color: #f8f9fa;
+}
+.hayd{
+    margin-top: 5px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.mage{
+    margin-top: 15px;
+    width: 90%;
+    height: 250px;
+    margin-left: 65px;
+}
+
+.cite-buttons a {
+    text-decoration: none;
+    padding: 10px 22px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.leyst-home {
+    height: 45px;
+    width: 140px;
+    background-color: #444;
+    color: white;
+    border: 2px solid #333;
+    border-radius: 5px;
+    transition: 1 ease-in-out;
+}
+
+.bouy-home {
+    height: 45px;
+    width: 140px;
+    background-color: white;
+    color: #444;
+    border: 2px solid #333;
+    border-radius: 5px;
+    margin-left: -5%;
+    transition: 1 ease-in-out;
+}
+
+.leyst-home:hover,
+.bouy-home:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+}
+
+.cuntint {
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+.copy{
+  text-align: center;
+}
+
+
+
+
+
+@media (max-width: 600px) {
+    #last{
+        display: flex;
+        flex-direction: column;
+    }
+    .cuntint{
+      margin-top: -20%;
+    }
+    .hayd{
+      font-size: 25px;
+      text-align: left;
+      margin-left: 40px;
+      margin-bottom: 25px;
+    }
+    .cite-buttons a {
+        text-decoration: none;
+        padding: 7px 14px;
+        margin: -30px;
+        border-radius: 2px;
+        font-size: 7px;
+    }
+    .mage{
+        margin-top: 15px;
+        width: 95%;
+        height: 200px;
+        margin-left: 15px;
+    }
+    .flax{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 3.8%;
+    }
+    .leyst-home{
+        font-size: 15px;
+        width: 45%;
+    }
+    .bouy-home{
+        width: 45%;
+        font-size: 15px;
+        margin-left: 33px;
+    }
+    .leyst-home:hover,
+    .bouy-home:hover {
+    background-color: #0056b3;
+    color: white;
+    border-color: #0056b3;
+    }
+}
+
+
+/* last section ends here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

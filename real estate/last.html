@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 30px;
+            grid-auto-rows: minmax(100px,auto);
+            grid-auto-columns: minmax(50px,auto);
+            margin-left: 10%;
+
+        }
+        .items{
+            background-color: #333;
+            border: 3px black;
+            border-radius: 3px;
+            color: aliceblue;
+            /* padding: 50px 30px; */
+        }
+        .last{
+            background-color: #333;
+        }
+        .ion{
+            font-size: 1.5rem;
+        }
+        .emage{
+            text-align: center;
+        }
+        .mage{
+            width: 90%;
+            height: 230px;
+        }
+        /* Heading */
+        .header-section {
+            padding: 50px 20px;
+            background-color: #333;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            font-size: 2.5rem;
+            color: #f8f9fa;
+        }
+
+        /* Buttons */
+        .buttons {
+            margin-top: 20px;
+        }
+
+        .list-home {
+            background-color: #444;
+            border-color: 2px solid white;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #f8f9fa;
+            transition: background-color 0.3s ease;
+        }
+
+        .list-home:hover {
+            background-color: #ddd;
+            color: #444;
+        }
+
+        .buy-home {
+            background-color: #f8f9fa;
+            border-color: 2px #444;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            color: #333;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-home:hover {
+            background-color: solid white;
+        }
+        @media only screen and (max-width: 600px){
+            .container{
+                margin-left: 1.5%;
+                grid-gap: 5px;
+                grid-auto-rows: minmax(50px,auto);
+                
+            }
+            .ion{
+                font-size: 1.5rem;
+                text-align: center;
+            }
+            .mage{
+                width: 98%;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="last">
+    <header class="header-section">
+        <div class="header-container">
+            <h1>M.A Real Estate</h1>
+            <div class="buttons">
+                <button class="list-home">List Your Home</button>
+                <button class="buy-home">Buy a Home</button>
+            </div>
+        </div>
+    </header>
+    <div class="emage">
+        <image class="mage" src="images/last.jfif"></image>
+    </div>
+    <div class="container">
+        <div class="items"><h2>GET IN TOUCH</h2></div>
+        <div class="items"><p>Main Office<br>near millinium mall, gulshan e jamal<br>Karachi, pakistan</p></div>
+        <div class="items"><p>Tel no: +92 301 9288876<br>Email: info@company.com<br>Website: www.neewwx.com</p></div>
+        <div class="items"><p class="ion"><ion-icon name="logo-facebook"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="logo-twitter"></ion-icon>&nbsp;&nbsp;&nbsp;&nbsp;<ion-icon name="logo-instagram"></ion-icon></p></div>
+    </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
